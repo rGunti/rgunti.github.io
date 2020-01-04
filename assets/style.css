@@ -1,0 +1,154 @@
+/*
+ * Copyright (c) 2018 Raphael Guntersweiler, All rights reserved!
+ */
+
+p {
+    line-height: 2rem;
+}
+
+.parallax-container {
+    min-height: 380px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+    /* box-shadow: inset 0px 10px 20px -10px #000000; */
+}
+.parallax-container .section {
+    width: 100%;
+}
+
+#index-banner {
+    height: 90vh;
+}
+
+.parallax-container .section {
+    position: absolute;
+    top: 40%;
+}
+#index-banner .section {
+    top: 10%;
+}
+
+@media only screen and (max-width : 600px) {
+    #index-banner .section {
+        top: 5%;
+    }
+}
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+footer.page-footer {
+    margin: 0;
+}
+
+footer,
+.container-fluid.section.scrollspy {
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+a.brand-logo-small {
+    font-size: 1.3rem !important;
+}
+
+@media only screen and (max-width : 992px) {
+    img.cover-image {
+        max-height: 128px;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    img.cover-image {
+        max-height: 250px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .right-align-on-med {
+        text-align: right;
+    }
+}
+
+.card .card-action a {
+    margin-left: 24px !important;
+    margin-right: 0 !important;
+}
+
+/* --- headline-fader --- */
+.headline-fader {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.headline-fader li {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: x-small;
+    line-height: 1.5;
+}
+
+/* --- animation chevron down --- */
+.anim-scroll-down {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+}
+
+.float {
+    animation: float_8574 2s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes float_8574 {
+    0% { transform: translateY(0) }
+    50% { transform: translateY(-6px) }
+    100% { transform: translateY(0) }
+}
+
+/* --- Skill List --- */
+.card .card-content.card-content-small {
+    padding: 12px;
+}
+.skill-card {
+    display: inline-block;
+    max-width: 150px;
+}
+.skill-card .card-image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+.skill-card .card-image img {
+    position: absolute;
+    left: -1000%;
+    right: -1000%;
+    top: -1000%;
+    bottom: -1000%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+.skill-card .progress.skill-rating {
+    position: absolute;
+    bottom: -8%;
+}
+
+/* --- CV --- */
+img.company-logo {
+    width: 32px;
+    margin-bottom: -7px;
+}
+
+p.word-wrapping {
+    word-break: normal !important;
+}
